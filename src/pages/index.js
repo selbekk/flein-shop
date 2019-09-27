@@ -18,8 +18,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Flein Shop" />
     <FullCenter>
-      <Spinner aria-label="Hold an 2 sek" />
-      Flein.shop
+      <h1>Flein shop</h1>
     </FullCenter>
   </Layout>
 )
