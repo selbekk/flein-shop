@@ -2,8 +2,8 @@ import React from "react"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
-import Spinner from "../components/spinner"
 import SEO from "../components/seo"
+import PageTitle from "../components/page-title"
 
 const FullCenter = styled.div`
   display: flex;
@@ -18,7 +18,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Flein Shop" />
     <FullCenter>
-      <h1>Flein shop</h1>
+      <PageTitle>Flein. Shop</PageTitle>
     </FullCenter>
   </Layout>
 )

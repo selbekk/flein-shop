@@ -620,3 +620,20 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+:root {
+  --primary-color: #d90368;
+  --secondary-color: #291720;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #291720;
+    --secondary-color: #d90368;
+  }
+}
+
+body {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
