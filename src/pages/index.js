@@ -1,20 +1,26 @@
 import React from "react"
-import { Link } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+import Spinner from "../components/spinner"
 import SEO from "../components/seo"
+
+const FullCenter = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+`
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <SEO title="Flein Shop" />
+    <FullCenter>
+      <Spinner aria-label="Hold an 2 sek" />
+      Flein.shop
+    </FullCenter>
   </Layout>
 )
 
